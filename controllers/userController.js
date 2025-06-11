@@ -18,7 +18,7 @@ exports.addCodingPlatform = catchAsync(async (req, res, next) => {
 
     // validate the user on platform
     // Ensure only one /api prefix is added
-const validatingURL = `${req.protocol}://${req.get('host')}/api/${requestedPlatformName.toLowerCase()}/validateUser/${requestedPlatformHandler}`;
+const validatingURL = `${req.protocol}://${req.get('host')}/${requestedPlatformName.toLowerCase()}/validateUser/${requestedPlatformHandler}`;
 
     let response;
     try {
